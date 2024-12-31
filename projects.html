@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Advanced HTML Series</title>
+    <title>Projects - Advanced HTML Series</title>
     <style>
         :root {
             --primary-color: #DAA520; /* Golden Pink */
@@ -73,59 +73,42 @@
             margin-bottom: 1.5rem;
         }
 
-        .about-content {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .about-content h3 {
-            color: var(--accent-color);
-            margin-top: 1rem;
-        }
-
-        .about-content p {
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-
-        .team-section {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
-            margin-top: 2rem;
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
         }
 
-        .team-member {
+        .project-card {
             background-color: var(--secondary-color);
-            border: 1px solid var(--primary-color);
-            border-radius: 8px;
-            padding: 1rem;
-            width: 250px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .team-member img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
             border: 2px solid var(--primary-color);
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
-        .team-member h4 {
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .project-card h3 {
             color: var(--primary-color);
             margin: 0.5rem 0;
         }
 
-        .team-member p {
-            font-size: 0.9rem;
+        .project-card p {
             color: var(--text-color);
+            line-height: 1.6;
         }
 
         footer {
@@ -139,17 +122,11 @@
         footer p {
             margin: 0;
         }
-
-        @media (max-width: 768px) {
-            .team-member {
-                width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>About Advanced HTML Series</h1>
+        <h1>Projects Showcase</h1>
     </header>
 
     <nav>
@@ -160,34 +137,29 @@
     </nav>
 
     <main>
-        <h2>Our Story</h2>
-        <div class="about-content">
-            <p>Welcome to Advanced HTML Series, a journey into the heart of web development. Our mission is to empower developers with the knowledge and tools they need to create stunning, efficient, and user-friendly web experiences.</p>
-
-            <h3>What Drives Us</h3>
-            <p>We believe in the power of education and the transformative potential of the web. By sharing our expertise and exploring cutting-edge technologies, we aim to inspire and educate developers around the world.</p>
-
-            <h3>Our Approach</h3>
-            <p>From in-depth tutorials to hands-on projects, we blend theoretical knowledge with practical applications to ensure a well-rounded learning experience. We cater to both beginners and experienced developers, offering something valuable for everyone.</p>
+        <h2>Our Latest Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="portfolio 3.webp" alt="Project 1" width="100%" height="auto" >
+                <h3>Interactive Portfolio</h3>
+                <p>A fully responsive portfolio showcasing stunning animations and seamless user interaction.</p>
+            </div>
+            <div class="project-card">
+                <img src="add to cart.jpg" alt="Project 2">
+                <h3>E-Commerce Platform</h3>
+                <p>End-to-end e-commerce solution with integrated payment systems and custom analytics dashboard.</p>
+            </div>
+            <div class="project-card">
+                <img src="social media.jpg" alt="Project 3">
+                <h3>Social Media App</h3>
+                <p>An engaging social media platform with real-time chat and advanced post filtering capabilities.</p>
+            </div>
+            <div class="project-card">
+                <img src="blog.jpg" alt="Project 4">
+                <h3>AI Blog Generator</h3>
+                <p>A cutting-edge application utilizing AI to generate compelling blog content on any topic.</p>
+            </div>
         </div>
-
-        <section class="team-section">
-            <div class="team-member">
-                <img src="https://via.placeholder.com/100" alt="Team Member 1">
-                <h4>Jane Doe</h4>
-                <p>Lead Developer and Educator</p>
-            </div>
-            <div class="team-member">
-                <img src="https://via.placeholder.com/100" alt="Team Member 2">
-                <h4>John Smith</h4>
-                <p>UI/UX Designer</p>
-            </div>
-            <div class="team-member">
-                <img src="https://via.placeholder.com/100" alt="Team Member 3">
-                <h4>Emily Clark</h4>
-                <p>Content Creator</p>
-            </div>
-        </section>
     </main>
 
     <footer>
