@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Advanced HTML Series</title>
+    <style>
+        :root {
+            --primary-color: #DAA520; /* Golden Pink */
+            --secondary-color: #FFC0CB; /* Rose Pink */
+            --accent-color: #FF69B4; /* Hot Pink */
+            --background-color: #FFF5F7;
+            --text-color: #333333;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            background-image: url('https://via.placeholder.com/1600x900/FFDAB9/000000?text=Nude+Background');
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        main h2 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h3 {
+            color: var(--accent-color);
+            margin-top: 1rem;
+        }
+
+        .about-content p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .team-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background-color: var(--secondary-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 1rem;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 2px solid var(--primary-color);
+        }
+
+        .team-member h4 {
+            color: var(--primary-color);
+            margin: 0.5rem 0;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Advanced HTML Series</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Our Story</h2>
+        <div class="about-content">
+            <p>Welcome to Advanced HTML Series, a journey into the heart of web development. Our mission is to empower developers with the knowledge and tools they need to create stunning, efficient, and user-friendly web experiences.</p>
+
+            <h3>What Drives Us</h3>
+            <p>We believe in the power of education and the transformative potential of the web. By sharing our expertise and exploring cutting-edge technologies, we aim to inspire and educate developers around the world.</p>
+
+            <h3>Our Approach</h3>
+            <p>From in-depth tutorials to hands-on projects, we blend theoretical knowledge with practical applications to ensure a well-rounded learning experience. We cater to both beginners and experienced developers, offering something valuable for everyone.</p>
+        </div>
+
+        <section class="team-section">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 1">
+                <h4>Jane Doe</h4>
+                <p>Lead Developer and Educator</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 2">
+                <h4>John Smith</h4>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 3">
+                <h4>Emily Clark</h4>
+                <p>Content Creator</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Advanced HTML Series. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
