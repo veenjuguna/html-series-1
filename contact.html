@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Software Developer Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #DAA520; /* Golden Pink */
+            --secondary-color: #FFC0CB; /* Rose Pink */
+            --accent-color: #FF69B4; /* Hot Pink */
+            --background-color: #FFF5F7;
+            --text-color: #333333;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        main h2 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .contact-item img {
+            width: 40px;
+            height: 40px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Let's Connect!</h2>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="phone 1.jpg" alt="Phone Icon">
+                <p><strong>Phone:</strong> <a href="tel:+254758018440" style="color: var(--accent-color); text-decoration: none;">+254 726 205 624</a></p>
+            </div>
+            <div class="contact-item">
+                <img src="email.jpg" alt="Email Icon">
+                <p><strong>Email:</strong> <a href="mailto:ivynjuguna2006@gmail.com" style="color: var(--accent-color); text-decoration: none;">ivynjuguna2006@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <img src="portfolio 3.webp" alt="Website Icon">
+                <p><strong>Portfolio:</strong> <a href="#" style="color: var(--accent-color); text-decoration: none;">www.ivynjuguna.com</a></p>
+            </div>
+            <div class="contact-item">
+                <img src="linkendin.jpg" alt="LinkedIn Icon">
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ivynjuguna" style="color: var(--accent-color); text-decoration: none;">linkedin.com/in/ivyjuguna</a></p>
+            </div>
+            <div class="contact-item">
+                <img src="twitter.jpg" alt="Twitter Icon">
+                <p><strong>Twitter:</strong> <a href="https://twitter.com/veenjuguna" style="color: var(--accent-color); text-decoration: none;">@veenjuguna</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ivy Njuguna Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

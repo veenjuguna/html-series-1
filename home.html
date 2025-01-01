@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Series 1 - Advanced</title>
+    <title>Home - Software Developer Portfolio</title>
     <style>
         :root {
             --primary-color: #DAA520; /* Golden Pink */
@@ -18,7 +18,7 @@
             margin: 0;
             padding: 0;
             font-family: var(--font-family);
-            background-color: #FFC5CB;
+            background-image:#FFC5CB;
             background-size: cover;
             background-attachment: fixed;
             color: var(--text-color);
@@ -45,33 +45,24 @@
         nav {
             background-color: var(--secondary-color);
             padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        nav ul li {
-            margin: 0;
-        }
-
-        nav ul li a {
+        nav a {
             text-decoration: none;
-            color: var(--primary-color);
+            color: var(--text-color);
             font-weight: bold;
-            transition: color 0.3s ease;
+            font-size: 1.2rem;
         }
 
-        nav ul li a:hover {
-            color: var(--accent-color);
+        nav a:hover {
+            color: var(--primary-color);
         }
 
         main {
@@ -88,47 +79,28 @@
         .content {
             max-width: 800px;
             margin: 0 auto;
-            text-align: left;
-            border: 2px solid var(--primary-color);
-            border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 1.5rem;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .content h3 {
-            color: var(--accent-color);
-            margin-top: 1rem;
-        }
-
-        .content p {
-            line-height: 1.8;
-        }
-
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-
-        .card {
-            background-color: var(--secondary-color);
-            border: 1px solid var(--primary-color);
-            border-radius: 8px;
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
             padding: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: calc(33% - 2rem);
-            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: popupFade 5s infinite;
+            cursor: pointer;
         }
 
-        .card h4 {
-            color: var(--primary-color);
-        }
-
-        .card p {
-            color: var(--text-color);
+        @keyframes popupFade {
+            0%, 100% { opacity: 0; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1); }
         }
 
         footer {
@@ -142,67 +114,99 @@
         footer p {
             margin: 0;
         }
-
-        @media (max-width: 768px) {
-            .card {
-                width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Advanced HTML Series</h1>
+        <h1>Welcome to My Portfolio</h1>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <main>
-        <h2>Explore the Power of HTML</h2>
-        <div class="content">
-            <p>HTML is more than just a markup language; it’s the foundation of the web. In this advanced series, you’ll delve into complex structures, interactive designs, and best practices for creating dynamic, user-friendly websites.</p>
+        <h2>Showcasing Creativity and Expertise</h2>
 
-            <h3>Why Learn HTML?</h3>
-            <p>HTML is the starting point for every web developer. Whether you're building simple landing pages or complex web applications, mastering HTML is key to success.</p>
 
-            <div class="cards">
-                <div class="card">
-                    <h4>Interactive Forms</h4>
-                    <p>Build robust forms with real-time validation, custom error messages, and conditional logic for enhanced user experiences.</p>
-                </div>
-                <div class="card">
-                    <h4>Responsive Design</h4>
-                    <p>Utilize CSS Grid and Flexbox to create layouts that adapt seamlessly across devices and screen sizes.</p>
-                </div>
-                <div class="card">
-                    <h4>Advanced Tags</h4>
-                    <p>Discover the power of semantic tags, interactive elements, and multimedia integrations for modern websites.</p>
-                </div>
-                <div class="card">
-                    <h4>Animations and Transitions</h4>
-                    <p>Incorporate smooth transitions, keyframe animations, and hover effects for a dynamic and engaging UI.</p>
-                </div>
-                <div class="card">
-                    <h4>Accessibility</h4>
-                    <p>Design inclusive websites by implementing ARIA roles, keyboard navigation, and screen reader compatibility.</p>
-                </div>
-                <div class="card">
-                    <h4>Performance Optimization</h4>
-                    <p>Learn techniques to minimize load times, such as image optimization and lazy loading.</p>
+        <main>
+           
+            <div class="content" style="display: flex; align-items: center; gap: 1.5rem;">
+                <!-- Image Section -->
+                <img src="jane doe.webp" alt="Ivy Njuguna" style="width: 300px; height: 300px; border-radius: 60%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                
+                <!-- Description Section -->
+                <div>
+                    <h3 style="margin: 0; color: var(--accent-color);">Ivy Njuguna</h3>
+                    <p style="margin: 0; font-size: 1.1rem; line-height: 1.6;">
+                        Software Developer specializing in creating efficient and aesthetically pleasing web applications. 
+                        With a passion for innovation, I strive to deliver user-focused solutions that inspire and perform.
+                    </p>
                 </div>
             </div>
+
+            <section>
+                <h2 style="margin-top: 2rem; color: var(--primary-color); text-align: center;">Gallery of Random Creativity</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                    <!-- Item 1 -->
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <img src="portfolio 3.webp" alt="Random Image 1" style="width: 150px; height: 150px; border-radius: 8px;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--accent-color);">Random Fact 1</h3>
+                            <p style="margin: 0;">Did you know that honey never spoils? Archaeologists have discovered pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <img src="john smith.jpg" alt="Random Image 2" style="width: 150px; height: 150px; border-radius: 8px;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--accent-color);">Random Fact 2</h3>
+                            <p style="margin: 0;">Bananas are berries, but strawberries are not. Botanically, berries must have seeds and pulp originating from the ovary of a flower.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <img src="social media.jpg" alt="Random Image 3" style="width: 150px; height: 150px; border-radius: 8px;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--accent-color);">Random Fact 3</h3>
+                            <p style="margin: 0;">The Eiffel Tower can grow taller during the summer. Due to heat, the metal expands, making it about 6 inches taller.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <img src="blog.jpg" alt="Random Image 4" style="width: 150px; height: 150px; border-radius: 8px;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--accent-color);">Random Fact 4</h3>
+                            <p style="margin: 0;">Sharks existed before trees. Sharks have been around for more than 400 million years, whereas trees appeared about 350 million years ago.</p>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <img src="emily.webp" alt="Random Image 5" style="width: 150px; height: 150px; border-radius: 8px;">
+                        <div>
+                            <h3 style="margin: 0; color: var(--accent-color);">Random Fact 5</h3>
+                            <p style="margin: 0;">Octopuses have three hearts, and two of them stop beating when the octopus swims. The third heart keeps the blood flowing to the rest of the body.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        
+        <div class="content">
+            <p>Hi! I'm a software developer with a passion for creating beautiful and efficient web applications. Dive into my projects and get to know my journey through this interactive portfolio.</p>
         </div>
     </main>
 
+    <div class="popup" onclick="alert('HTML Tip: Always use alt attributes for images to improve accessibility.');">
+        🌟 Click for a Pro Tip!
+    </div>
+
     <footer>
-        <p>&copy; 2025 Advanced HTML Series. All Rights Reserved.</p>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
