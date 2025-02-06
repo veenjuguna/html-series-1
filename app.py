@@ -87,20 +87,9 @@ def express_love_and_cuteness():
         "The way you make everyday moments special",
         "Your love for coffee (or tea, if applicable!)",
         "Your amazing photography skills",
-        "Your love for life",
-        "The way you blush when you're shy",
-        "Your love for celebrations",
-        "Your graceful way of handling situations",
-        "Your beautiful dreams",
-        "The way you keep me grounded",
-        "Your love for learning new things",
-        "Your never-give-up attitude",
-        "The way you believe in me",
-        "Your warmth and tenderness",
-        "The way you make me a better person",
-        "Your unshakable confidence",
-        "Your endless love and support"
-    ]
+        https://forms.gle/n6Ju4viUMYMQ9fpi6[17/01, 08:21] Ivy: ♥️
+[17/01, 08:58] Ivy: Don't miss out, Subscribe now!!
+[17/01, 16:01] Ivy: Well
 #comments are changed
 
     # Printing each cute thing
