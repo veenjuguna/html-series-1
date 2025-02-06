@@ -101,6 +101,7 @@ def express_love_and_cuteness():
         "Your unshakable confidence",
         "Your endless love and support"
     ]
+#comments are changed
 
     # Printing each cute thing
     for i, thing in enumerate(cute_things, 1):
