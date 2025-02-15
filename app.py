@@ -83,6 +83,9 @@ def express_love_and_cuteness():
         "Your beautiful heart",
         "Your wonderful taste in movies",
         "Your gentle spirit",
+hauabajsbbjs
+msbainwbbsjbshahaja
+jainbahinwnw
         "Your thoughtfulness",
         "The way you make everyday moments special",
         "Your love for coffee (or tea, if applicable!)",
