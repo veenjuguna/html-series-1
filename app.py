@@ -1,4 +1,4 @@
-def express_love_and_cuteness():
+8def express_love_and_cuteness():
     # Message of love
     print("I love you, Keyla! Here are 100 cute things about you:")
 
@@ -18,7 +18,7 @@ def express_love_and_cuteness():
         "How you care for animals",
         "Your amazing cooking skills",
         "The way you dance when you're happy",
-        "Your love for adventure",
+        "Your bsbshbshs sbbzbbs sjsnbsyhsksjsbbsus sjjhshs sksjsnehwnsknwbsis wnkshbhshsbbsbjbshbsbhusnsusbbsjsusbshsisbbsjsjsbbsjbbsjsjnslove for adventure",
         "How you always see the best in people",
         "Your gorgeous hair",
         "The way you sing in the car",
